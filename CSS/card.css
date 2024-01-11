@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url('/Photo/Card/background1.jpg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.image_container{
+    margin: 550px;
+    background: rgba(144, 0, 255, 0.671);
+    text-align: center;
+    padding: 40px 90px;
+    color: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.Logo{
+    width: 45px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    border-radius: 50%;
+}
+
+.Image{
+    height: 200px;
+    border-radius: 40%;
+    padding: 6px;
+    background: #fff;
+    margin-top: 40px;
+}
+
+.Mode{
+    width: 45px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.Connect img{
+    width: 40px;
+    position: static;
+}
+
+button{
+    font-size: large;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.More_Details{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: -5px -20px;
+}
+
+.down_arrow{
+    margin: 40px;
+    width: 40px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="/CSS/NavbarCSS.css" rel="stylesheet">
+    <link href="/CSS/ContactMe.css" rel="stylesheet">
+</head>
+<body>
+<!-- Define Navbar -->
+<div class="Container-1">
+    <div class="SubContainer-1">
+        <a href="/HTML/Home.html">
+            <img src="/Photo/Logo.png" alt="My Logo" class="My_Logo" style="display: none;">
+        </a>
+    </div>
+    <div class="SubContainer-2">
+        <nav>
+            <a href="/HTML/Home.html">Home</a>
+            <a href="/HTML/Academic_History.html">Academic History</a>
+            <a href="/HTML/My_Hobby.html">My Hobby<sup style="font-size: small; background-color: rgb(255, 0, 0);">New</sup></a>
+            <a href="/HTML/ContactMe.html">Contact Me</a>
+            <a href="/HTML/card.html" target="_blank">Card</a>
+        </nav>
+    </div>
+    <div class="SubContainer-3">
+        <button id="theme">Mode</button>
+    </div>    
+</div>
+
+<div class="Container-2">
+    <div class="SubContainer-2-1">
+        <h2 align="center">Links</h2>
+            <a href="mailto:ndp8368236@gmail.com" target="_blank">
+                <img src="/Photo/ContactMe/email.png">
+                Email
+            </a>
+        <br>
+        <a href="https://www.linkedin.com/in/nisarg-patel-2b651925b" target="_blank">
+            <img src="/Photo/ContactMe/Linkedin.png">
+            Linkdin
+        </a>
+        <br>
+        <a href="https://instagram.com/ndp_aw95275?igshid=ZDdkNTZiNTM=" target="_blank">
+            <img src="/Photo/ContactMe/Instagram.png">
+            Instagram
+        </a>
+        <br>
+        <a href="#" target="_blank">
+            <img src="/Photo/ContactMe/Discord.png">
+            Discord
+        </a>
+    </div>
+
+    <div class="SubContainer-2-2">
+        <h2 align="center">Form</h2>
+        <p style="color: brown;">Click Here For Give Feedback</p>
+        <a href="/HTML/Feedback_Form.html" target="_blank"><button>Feedback Form</button></a>
+    
+        <p style="color: brown;">Fill The Below Form If You Have Any Query</p>
+        <a href="/HTML/contactusform.html" target="_blank"><button>Contact Us</button></a>
+    </div>
+
+    <div class="SubContainer-2-3">
+        <h2 align="center">My Location</h2>
+        <div>
+            <button onclick="showLocation()" align="center">Location</button>
+        </div>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.0860896496454!2d72.88068310734023!3d22.67698930000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e5adeb0e59a4b%3A0xfecb6d4e967c92b4!2sAarav%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1684469741533!5m2!1sen!2sin" id="Location"></iframe>
+    </div>
+</div>
+
+<script>
+    var a;
+    function showLocation()
+    {
+        if(a == 1)
+        {
+            document.getElementById("Location").style.display = "block";
+            a = 0;
+        }
+        else
+        {
+            document.getElementById("Location").style.display = "none";
+            a = 1;
+        }
+    }
+</script>
+
+<script>
+    var themeToggle = document.getElementById("theme");
+    themeToggle.addEventListener("click", toggleTheme);
+
+    function toggleTheme() {
+        var body = document.body;
+        body.classList.toggle("light");
+        body.classList.toggle("dark");
+    }
+</script>
+</body>
+</html>

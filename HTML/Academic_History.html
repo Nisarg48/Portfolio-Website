@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic History</title>
+    <link href="/CSS/NavbarCSS.css" rel="stylesheet">
+    <link href="/CSS/Academic_History.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Define Navbar -->
+<div class="Container-1">
+    <div class="SubContainer-1">
+        <a href="/HTML/Home.html">
+            <img src="/Photo/Logo.png" alt="My Logo" class="My_Logo">
+        </a>
+    </div>
+    <div class="SubContainer-2">
+        <nav>
+            <a href="/HTML/Home.html">Home</a>
+            <a href="/HTML/Academic_History.html">Academic History</a>
+            <a href="/HTML/My_Hobby.html">My Hobby<sup style="font-size: small; background-color: rgb(255, 0, 0);">New</sup></a>
+            <a href="/HTML/ContactMe.html">Contact Me</a>
+            <a href="/HTML/card.html" target="_blank">Card</a>
+        </nav>
+    </div>
+    <div class="SubContainer-3">
+        <button id="theme">Mode</button>
+    </div>    
+</div>
+<div class="timeline">
+
+    <a href="#2" class="link">
+        <div class="container left-container">
+            <img src="/Photo/Academic_History/white.jpeg">
+            <div class="text-box">
+                <h2>2022 - 2023</h2>
+                <p>In College 1<sup>st</sup> Year.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </a>
+
+    <a href="#1" class="link">
+        <div class="container right-container">
+            <img src="/Photo/Academic_History/white.jpeg">
+            <div class="text-box">
+                <h2>2021 - 2022</h2>
+                <p>I Give My HSC Board Exam</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+    </a>
+
+    <a href="#1" class="link">
+        <div class="container left-container">
+            <img src="/Photo/Academic_History/white.jpeg">
+            <div class="text-box">
+                <h2>2019 - 2020</h2>
+                <p>I Give My SSC Board Exam</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </a>
+
+    <div class="container right-container">
+        <img src="/Photo/Academic_History/white.jpeg">
+        <div class="text-box">
+            <h2>2018</h2>
+            <p>I Changed My School And Take Admission In A B School In 9<sup>th</sup> Standered </p>
+            <span class="right-container-arrow"></span>
+        </div>
+    </div>
+
+    <div class="container left-container">
+        <img src="/Photo/Academic_History/white.jpeg">
+        <div class="text-box">
+            <h2>2010 - 2018</h2>
+            <p>I Completed My Primary School Studies in Shri S. M. K. R. Vasi High School</p>
+            <span class="left-container-arrow"></span>
+        </div>
+    </div>
+</div>
+
+<!-- Academic Result -->
+<div class="Division_For_BackgroundImage">
+    <div class="Division_For_Floating_Table" align="center">
+        <h1 style="color:white;" id="1">Academic Result</h1>
+        <table class="Academic_Table">
+            <tr style="background-color: rgb(74, 192, 166); color: rgb(0, 0, 0); height: 40px; text-align: center;">
+                <th>MEDIUM OF EXAM</th>
+                <th>PASS YEAR </th>
+                <th>PASS MONTH</th>
+                <th>BOARD NAME</th>
+                <th>INSTITUTE NAME</th>
+                <th>RESULT (Persentile)</th>
+            </tr>
+    
+            <tr style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); height: 40px; text-align: center;">
+                <td>SSC</td>
+                <td>2020</td>
+                <td>MARCH</td>
+                <td>GSEB</td>
+                <td>A B SCHOOL</td>
+                <td>95.95</td>
+            </tr>
+    
+            <tr style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); height: 40px; text-align: center;">
+                <td>HSC</td>
+                <td>2022</td>
+                <td>MARCH</td>
+                <td>GSEB</td>
+                <td>A B SCHOOL</td>
+                <td>95.50</td>
+            </tr>
+    
+            <tr style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); height: 40px; text-align: center;">
+                <td>GUJCET</td>
+                <td>2022</td>
+                <td>APRIL</td>
+                <td>GSEB</td>
+                <td>A B SCHOOL</td>
+                <td>95.29</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br>
+<br>
+
+<!-- College Result -->
+<div class="College-Result" align="center">
+    <h1 style="color:white;" id="2">College Result</h1>
+    <table>
+        <tr style="background-color: rgb(74, 192, 166); color: rgb(0, 0, 0); height: 40px; text-align: center;">
+            <th>Semester</th>
+            <th>CPI</th>
+        </tr>
+        <tr style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); height: 40px; text-align: center;">
+            <td>1<sup>st</sup></td>
+            <td>9</td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    var themeToggle = document.getElementById("theme");
+    themeToggle.addEventListener("click", toggleTheme);
+
+    function toggleTheme() {
+        var body = document.body;
+        body.classList.toggle("light");
+        body.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>

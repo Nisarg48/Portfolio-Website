@@ -1,0 +1,45 @@
+/* Define Background color */
+body{
+    background-color: #ffffffb7;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Set Background Image as remain Whole Webpage */
+.Background_For_Division-1{
+    overflow: hidden;
+}
+
+/* Propertys which Related To Table */
+.Personal_Information_Table{
+    text-align: left;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    color: #4040a1;
+}
+
+@media screen and (max-width: 490px)
+{
+    .Personal_Information_Table{
+        display: block;
+    }
+
+    .Personal_Information_Table tr td{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 9600px)
+{
+    .Personal_Information_Table{
+        font-size: 20px;
+    }
+}

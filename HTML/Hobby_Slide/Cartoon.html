@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon</title>
+    <style>
+        *{
+            color: white;
+        }
+
+        body {
+            background-image: url('/Photo/Hobby/Cartoon.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .cartoon-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .Cartoon-1 img, .Cartoon-2 img, .Cartoon-3 img{
+            height: 50vh;
+            border: solid white;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .cartoon-container{
+                display: block;
+            }
+
+            .Cartoon-1 img, .Cartoon-2 img, .Cartoon-3 img{
+                height: 40vh;
+                border: solid white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="Hobby_Background" align="center">
+            <h1 align="center" style="color:white;">Cartoon</h1>
+            <hr>
+            <h2 align="center">
+                <div class="cartoon-container">
+                    <div class="Cartoon-1">
+                        <img src="/Photo/Hobby/Pokemon.jpg">
+                        <h3 align="center">Pokemon</h3>
+                    </div>
+                    &nbsp;
+                    &nbsp;
+                    <hr>
+                    &nbsp;
+                    &nbsp;
+                    <div class="Cartoon-2">
+                        <img src="/Photo/Hobby/Slugterra.jpg">
+                        <h3 align="center">Slugterra</h3>
+                    </div>
+                    &nbsp;
+                    &nbsp;
+                    <hr>
+                    &nbsp;
+                    &nbsp;
+                    <div class="Cartoon-3">
+                        <img src="/Photo/Hobby/Beyblade.jpg">
+                        <h3 align="center">Beyblade</h3>
+                    </div>
+                </div>
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>

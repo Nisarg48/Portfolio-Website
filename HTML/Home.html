@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href="/CSS/NavbarCSS.css" rel="stylesheet">
+    <link href="/CSS/Home.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="Container-1">
+    <div class="SubContainer-1">
+        <a href="/HTML/Home.html">
+            <img src="/Photo/Logo.png" alt="My Logo" class="My_Logo">
+        </a>
+    </div>
+    <div class="SubContainer-2">
+        <nav>
+            <a href="/HTML/Home.html">Home</a>
+            <a href="/HTML/Academic_History.html">Academic History</a>
+            <a href="/HTML/My_Hobby.html">My Hobby<sup style="font-size: small; background-color: rgb(255, 0, 0);">New</sup></a>
+            <a href="/HTML/ContactMe.html">Contact Me</a>
+            <a href="/HTML/card.html" target="_blank">Card</a>
+        </nav>
+    </div>
+    <div class="SubContainer-3">
+        <button id="theme">Mode</button>
+    </div>
+</div>
+
+<div class="Container-2">
+    <div class="SubContainer-2-1">
+        <div class="f1 f">
+            Hello, I am
+        </div>
+        <br>
+        <div class="f2 f">
+            Nisarg 
+        </div>
+        <br>
+        <div class="f3 f">
+            I am a Computer Engineering Student.
+        </div>
+    </div>
+    <div class="SubContainer-2-2">
+        <img src="/Photo/Home/Nisarg_Photo.jpg" alt="Nisarg_Photo" class="My_Photo">
+        <button onclick="showorhide()" class="pi">Personal Information</button>
+    </div>
+</div>
+
+<div class="Container-3">
+    <iframe src="Personal_Information.html" class="personal_info" id="personal_info"></iframe>
+</div>
+
+<script>
+    var a;
+    function showorhide()
+    {
+        if(a == 0)
+        {
+            document.getElementById("personal_info").style.display = "none";
+            a = 1;
+        }
+        else
+        {
+            document.getElementById("personal_info").style.display = "inline";
+            a = 0;
+        }
+    }
+</script>
+
+<script>
+    var themeToggle = document.getElementById("theme");
+    themeToggle.addEventListener("click", toggleTheme);
+
+    function toggleTheme() {
+        var body = document.body;
+        body.classList.toggle("light");
+        body.classList.toggle("dark");
+    }
+</script>
+</body>
+</html>

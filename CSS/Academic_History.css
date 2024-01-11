@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Gill Sans;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.804);
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    color: black;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.text-box{
+    padding: 20px 30px;
+    position: relative;
+    background-color: yellow;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+#image{
+    display: none;
+}
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 30px;
+    border-radius: 50%;
+    right: -15px;
+    top: 32px;
+    z-index: 10;
+    border: 1px solid black;
+}
+
+.right-container img{
+    left: -15px;
+    border: 1px solid black;
+}
+
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(152, 205, 251);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(255, 121, 121);
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(255, 121, 121);
+    left: -15px;
+}
+
+.Division_For_Floating_Table table{
+    width: 100%;
+}
+
+.College-Result table{
+    width: 50%;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+.College-Result table tr,td,th{
+    border: 1px solid white;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+/* Light Theme */
+body.light {
+    background-color: #000000;
+}
+  /* Dark Theme */
+body.dark {
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+        
+    }
+
+    .timeline::after{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: rgb(152, 205, 251);
+        top: 0;
+        left: 5%;
+        margin-left: -3;
+        z-index: -1;
+    }
+
+    .left-container{
+        left: 0%;
+    }
+    
+    .right-container{
+        left: 0%;
+    }
+
+    .left-container-arrow{
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid rgb(255, 121, 121);
+        border-left: none;
+        left: 1%;
+    }
+
+    .right-container-arrow{
+        left: 1%;
+    }
+
+    .left-container img{
+        left: 2.5%;
+        border: 1px solid black;
+    }
+
+    .right-container img{
+        left: 2.5%;
+        border: 1px solid black;
+    }
+    
+}

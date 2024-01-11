@@ -1,0 +1,48 @@
+body{
+    background-color: rgba(0, 0, 0, 0.804);
+}
+
+.page {
+    box-sizing: border-box;
+    display: none;
+    /* border: 0.5vh solid rgb(183, 127, 127); */
+    padding: 0.5vh;
+}
+
+iframe{
+    box-sizing: border-box;
+    height: 73vh;
+    width: 90vw;
+}
+
+.active {
+    display: block;
+}
+
+li{
+    list-style-type: none;
+} 
+
+div{
+    align-items: center;
+}
+
+table tr td{
+    border: 1px solid yellow;
+    background-color: rgb(244, 244, 244);
+}
+
+table tr td a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 255);
+}
+
+/* Light Theme */
+body.light {
+    background-color: #000000;
+}
+  /* Dark Theme */
+body.dark {
+    background-color: #ffffff;
+}
